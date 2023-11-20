@@ -587,7 +587,7 @@ lab val age_sex_grp nrgroup
 	// Change sex variable to dummy
 	rename hh_b03 sex
 	recode sex (1=0) (2=1)
-	lab var sex "Sex (0=Male, 1=Female)
+	lab var sex "Sex (0=Male, 1=Female)"
 	lab def sex 0 "Male" 1 "Female"
 	lab val sex sex
 	tab sex
